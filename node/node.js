@@ -7,10 +7,10 @@
 
 // console.log(sum);
 
-// const readline = require('readline').createInterface({
-//   input: process.stdin,
-//   output: process.stdout
-// })
+const readline = require("readline").createInterface({
+  input: process.stdin,
+  output: process.stdout,
+});
 
 // readline.question(`lastname `, name => {
 //   let fullname = []
@@ -24,10 +24,10 @@
 //   })
 // })
 
- // NODE WRITE FILE
-const fs = require('fs');
+// NODE WRITE FILE
+// const fs = require('fs');
 
-fs.appendFileSync('./notes.txt', 'data to append\n', function (err) {
-  if (err) throw err;
-  console.log('Saved!');
-});
+// fs.appendFileSync('./notes.txt', 'data to append\n', function (err) {
+//   if (err) throw err;
+//   console.log('Saved!');
+// });
