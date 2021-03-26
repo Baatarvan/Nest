@@ -19,13 +19,13 @@
 //   }
 // }
 
-const readline = require("readline");
-const { number } = require("yargs");
+// const readline = require("readline");
+// const { number } = require("yargs");
 
-const rl = readline.createInterface({
-  input: process.stdin,
-  output: process.stdout,
-});
+// const rl = readline.createInterface({
+//   input: process.stdin,
+//   output: process.stdout,
+// });
 
 // let even = 0;
 // let odd = 1;
@@ -76,8 +76,80 @@ const rl = readline.createInterface({
 //     return "denied";
 //   }
 // };
-getAc = (allowed) => (allowed ? "granted" : "denied");
-rl.close();
+// getAc = (allowed) => (allowed ? "granted" : "denied");
+// rl.close();
 
-console.log((result1 = getAc(true)));
-console.log((result2 = getAc(false)));
+// console.log((result1 = getAc(true)));
+// console.log((result2 = getAc(false)));
+
+// let bool1 = true;
+// let bool2 = false;
+// let a;
+// a = bool1 ? "bool1 is true" : bool2 ? "bool2 is true" : "else";
+
+// console.log(a);
+// getLastName = (obj) => obj.lastName;
+
+// result = getLastName({ fistname: "baatar", lastName: "van" });
+
+// console.log(result);
+
+// function getlast(obj) {
+//   return obj.lastName;
+// }
+
+// console.log(
+//   getlast({
+//     fistname: "baatar",
+//     lastName: "van",
+//   })
+// );
+
+// const a = [1, 2, 3, 4];
+
+// mul = (num) => {
+//   return num * 2;
+// };
+
+// console.log(a.map(mul));
+// const bday = [1994, 1997, 2003];
+// let thisYear = new Date();
+// console.log(
+//   bday.map((year) => {
+//     return thisYear.getFullYear() - year;
+//   })
+// );
+// persons = [
+//   {
+//     id: 1,
+//     name: "dorj",
+//     age: 16,
+//   },
+//   {
+//     id: 1,
+//     name: "dorj",
+//     age: 19,
+//   },
+//   {
+//     id: 1,
+//     name: "baatar",
+//     age: 23,
+//   },
+//   {
+//     id: 1,
+//     name: "saruul",
+//     age: 19,
+//   },
+// ];
+
+// console.log(persons.filter((person) => person.age > 18));
+
+// const arr = [1, 2, 3, 4, 5];
+// let sum = 0;
+// arr.forEach((el) => {
+//   sum += el;
+// });
+
+// reducer = (acc, cur) => acc + cur;
+
+// console.log(arr.reduce(reducer, 0));
