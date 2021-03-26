@@ -153,3 +153,69 @@
 // reducer = (acc, cur) => acc + cur;
 
 // console.log(arr.reduce(reducer, 0));
+
+// let a = 1,
+//   b = 3,
+//   c = 3;
+
+// function sum(f, c, g) {
+//   return a * b * c;
+// }
+
+// console.log(sum(a, b, c));
+
+// const chocolates = [
+//   { dark: true, flavour: "strawberry" },
+//   { dark: false, flavour: "strawberry" },
+//   { dark: false, flavour: "almond" },
+//   { dark: true, flavour: "almond" },
+//   { dark: false, flavour: "lemon" },
+// ];
+
+// function checkProperty(k) {
+//   return (value) => {
+//     return (item) => {
+//       return item[k] == value;
+//     };
+//   };
+// }
+// // Chocolates array object өгөгджээ. Тухайн arrays -аас ямарч field -ын утгаар нь шүүх боломжтой currying function бич (checkProperty).
+// const darkChocolates = chocolates.filter(checkProperty("dark")(true));
+// console.log(darkChocolates);
+// const almondChocolates = chocolates.filter(checkProperty("flavour")("almond"));
+// console.log(almondChocolates);
+
+// const mul = makeFun(2)("*");
+// const result2 = mul(5);
+
+// const makeFun = (num1) => (op) => (num2) => {
+//   switch (op) {
+//     case "*":
+//       return num1 * num2;
+//       break;
+//     case "+":
+//       return num1 + num2;
+//       break;
+//     case "-":
+//       return num1 - num2;
+//       break;
+//     case "/":
+//       return num1 / num2;
+//       break;
+//   }
+// };
+
+// console.log(result2);
+
+const chalk = require("chalk");
+
+const makefun = (hello) => (chalk) => (name) => {
+  return hello + chalk(` ${name}`);
+};
+
+const greetRed = makefun("Hello")(chalk.red);
+console.log(greetRed("Bulgaa"));
+const greetGreen = makefun("Hello")(chalk.green);
+console.log(greetGreen("Bulgaa"));
+const greetBlue = makefun("Hello")(chalk.blue);
+console.log(greetBlue("Bulgaa"));
