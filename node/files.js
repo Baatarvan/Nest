@@ -207,15 +207,15 @@
 
 // console.log(result2);
 
-const chalk = require("chalk");
+// const chalk = require("chalk");
 
-const makefun = (hello) => (chalk) => (name) => {
-  return hello + chalk(` ${name}`);
-};
-
-const greetRed = makefun("Hello")(chalk.red);
-console.log(greetRed("Bulgaa"));
-const greetGreen = makefun("Hello")(chalk.green);
-console.log(greetGreen("Bulgaa"));
-const greetBlue = makefun("Hello")(chalk.blue);
-console.log(greetBlue("Bulgaa"));
+// const makefun = (hello) => (chalk) => (name) => {
+//   return hello + chalk(` ${name}`);
+// };
+// greetBlue;
+// const greetRed = makefun("Hello")(chalk.red);
+// console.log(greetRed("Bulgaa"));
+// const greetGreen = makefun("Hello")(chalk.green);
+// console.log(greetGreen("Bulgaa"));
+// const greetBlue = makefun("Hello")(chalk.blue);
+// console.log(greetBlue("Bulgaa"));
