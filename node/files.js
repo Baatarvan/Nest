@@ -141,7 +141,6 @@
 //     age: 19,
 //   },
 // ];
-
 // console.log(persons.filter((person) => person.age > 18));
 
 // const arr = [1, 2, 3, 4, 5];
@@ -219,3 +218,56 @@
 // console.log(greetGreen("Bulgaa"));
 // const greetBlue = makefun("Hello")(chalk.blue);
 // console.log(greetBlue("Bulgaa"));
+
+// function makePlus(a) {
+//   return (b) => {
+//     return a + b;
+//   };
+// }
+
+// const plusFive = makePlus(5);
+// console.log(plusFive(4));
+// const a = [
+//   ["A", "A", "A"],
+//   ["A", "A", "A"],
+//   ["A", "B", "A"],
+// ];
+// let newArr = [];
+// a.forEach((el) => {
+//   el.forEach((item, index) => {
+//     newArr.push(item);
+//   });
+// });
+// newArr.forEach((el, i, arr) => {
+//   if (arr.indexOf(el)) {
+//     return console.log(i);
+//   }
+// });
+
+// const b = [
+//   ["O", "O", "O", "O"],
+//   ["O", "O", "O", "O"],
+//   ["O", "O", "O", "O"],
+//   ["O", "O", "O", "O"],
+//   ["P", "O", "O", "O"],
+//   ["O", "O", "O", "O"],
+// ];
+
+// b.forEach((el, index) => {
+//   if (el[index] !== el[index + 1]) {
+//     console.log(index);
+//   }
+// });
+const input = [
+  [0, 1, 0, 0],
+  [0, 0, 1, 0],
+  [0, 1, 0, 1],
+  [1, 1, 0, 0],
+];
+
+input.map((row, y) => {
+  return row.map((el, x) => {
+    if (x == -1) {
+    }
+  });
+});
